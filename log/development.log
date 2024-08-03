@@ -38,3 +38,25 @@ Processing by StaticPagesController#help as HTML
 Completed 200 OK in 4ms (Views: 3.3ms | Allocations: 2693)
 
 
+Started GET "/about" for ::1 at 2024-08-03 18:15:55 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
+Started GET "/static_pages/home" for ::1 at 2024-08-03 18:16:46 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 32495)
+Completed 200 OK in 56ms (Views: 51.3ms | ActiveRecord: 0.0ms | Allocations: 34547)
+
+
+Started GET "/static_pages/about" for ::1 at 2024-08-03 18:16:50 +0900
+Processing by StaticPagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 84)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2371)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 2709)
+
+
