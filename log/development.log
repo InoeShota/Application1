@@ -1,0 +1,40 @@
+  [1m[35m (31.4ms)[0m  [1m[35mCREATE DATABASE `development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE DATABASE `test` DEFAULT CHARACTER SET `utf8mb4`[0m
+Started GET "/" for ::1 at 2024-08-03 16:04:28 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/shota/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shota/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 588)
+Completed 200 OK in 12ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 4679)
+
+
+Started GET "/users" for ::1 at 2024-08-03 16:04:32 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/static_pages/home" for ::1 at 2024-08-03 16:04:38 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 247.4ms | Allocations: 88027)
+Completed 200 OK in 249ms (Views: 248.6ms | ActiveRecord: 0.0ms | Allocations: 89019)
+
+
+Started GET "/static_pages/home" for ::1 at 2024-08-03 16:12:48 +0900
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 11433)
+Completed 200 OK in 18ms (Views: 17.1ms | Allocations: 12386)
+
+
+Started GET "/static_pages/help" for ::1 at 2024-08-03 16:12:57 +0900
+Processing by StaticPagesController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.4ms | Allocations: 88)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2360)
+Completed 200 OK in 4ms (Views: 3.3ms | Allocations: 2693)
+
+
